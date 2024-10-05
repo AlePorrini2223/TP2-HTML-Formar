@@ -4,113 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/assets/logo-mercado-liebre.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/a8adffa4f1.js" crossorigin="anonymous"></script>
     <title>Mercado Liebre</title>
 </head>
 
 <body>
     <header>
-        <img src="./assets/logo-mercado-liebre.svg" alt="logo-ml">
-        <form action="#" method="get">
-            <label for="search-bar">Buscar:</label>
-            <input type="search" id="search-bar">
-            <button>Search</button>
-        </form>    
-        <nav>
-            <ul>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Tiendas Oficiales</a></li>
-                <li><a href="#">Vender</a></li>
-                <li><a href="#">Ayuda</a></li>
-                <li><a href="#">Creá tu cuenta</a></li>
-                <li><a href="/login.html">Ingresá</a></li>
-                <li><a href="#">Mis compras</a></li>
-            </ul>
-        </nav>
-        <p>Comprá en cuotas y sin tarjeta de crédito</p>
+        <div id="hbox-1">
+            <img src="./assets/logo-mercado-liebre.svg" id="logo-ml" alt="logo-mercado-liebre">
+            <form action="#" method="get">
+                <input type="search" id="search-bar" placeholder="Buscar productos, marcas" size="30">
+                <button class="search-buttom1" type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+            <button class="search-buttom2">
+                <img src="assets/magnifying-glass-solid.svg" class="glass-icon" alt="search-icon">
+            </button>
+            <p class="h-text"><i class="fa-solid fa-hand-holding-dollar"></i>
+            Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>      
+        <div id="hbox-2">
+            <nav>
+                <ul class="nav-1">
+                    <li class="h-nav"><a href="#">Ofertas</a></li>
+                    <li class="h-nav"><a href="#">Tiendas Oficiales</a></li>
+                    <li class="h-nav"><a href="#">Vender</a></li>
+                    <li class="h-nav"><a href="#">Ayuda</a></li>
+                </ul>
+            </nav>
+            <nav>   
+                <ul class="nav-2">  
+                    <li class="h-nav"><a href="#">Creá tu cuenta</a>
+                        <i class="fa-regular fa-id-card"></i></li>
+                    <li class="h-nav"><a href="/login.html">Ingresá</a>
+                        <i class="fa-solid fa-right-to-bracket"></i></li>
+                    <li class="h-nav"><a href="#">Mis compras</a>
+                        <i class="fa-solid fa-basket-shopping"></i></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="burger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </header>
 
-    <form action="/home.html" method="get">
+    <main>
+        <form action="/home.html" method="get" id="register">
+            <label for="name"></label>
+            <input type="text" id="name" placeholder="Nombre y Apellido">
+            <label for="username"></label>
+            <input type="text" id="username" placeholder="Nombre de Usuario" required>
+            <label for="email"></label>
+            <input type="email" id="email" placeholder="Email" required>
 
-        <fieldset id="personal">
-            <legend class="titulo-form">Registrarse</legend>
-
-            <label for="name">Nombre y Apellido</label>
-            <input type="text" id="name" required>
-            <label for="username">Nombre del Usuario:</label>
-            <input type="text" id="username" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            <label for="date">Fecha de Nacimiento:</label>
-            <input type="date" id="date" required>
-            <label for="address">Domicilio:</label>
-            <input type="text" id="address" required>
+            <h4 class="input-title">Fecha de nacimiento</h4>
+            <label for="date">
+            <input type="date" id="date" required></label>
+            <label for="address"></label>
+            <input type="text" id="address" placeholder="Domicilio" required>
                 
-            <p>Perfil del Usuario: ¿Qué desea realizar?</p>
-            <label for="buy">Comprar</label>
-            <input type="radio" id="buy">
-            <label for="sell">Vender</label>
-            <input type="radio" id="sell">
-        </fieldset> 
-        
-        <fieldset id="interes">
-            <legend class="titulo-form">Categorías de interés</legend>
+            <h4 class="input-title">Perfil del Usuario</h4>
+            <div class="profile-radio">
+                <input type="radio" id="buy" name="profile">
+                <label for="buy">Comprador</label>
+                <input type="radio" id="sell" name="profile">
+                <label for="sell">Vendedor</label>
+            </div>
+            <h4 class="input-title">Intereses</h4>
+            <ul id="checkboxes">
+                <li class="check-b"> 
+                    <input type="checkbox" name="intereses-checkbox" id="electro" value="electro"> 
+                    <label for="electro">Electro</label>
+                </li>
+                <li class="check-b"> 
+                    <input type="checkbox" name="intereses-checkbox" id="moda" value="moda">
+                    <label for="moda">Moda</label> 
+                </li>     
+                <li class="check-b"> 
+                    <input type="checkbox" name="intereses-checkbox" id="hogar" value="hogar"> 
+                    <label for="hogar">Hogar</label> 
+                </li>    
+                <li class="check-b"> 
+                    <input type="checkbox" name="intereses-checkbox" id="jugueteria" value="jugueteria"> 
+                    <label for="jugueteria">Jugueteria</label>
+                </li>   
+                <li class="check-b"> 
+                    <input type="checkbox" name="intereses-checkbox" id="vida-sana" value="vida-sana"> 
+                    <label for="vida-sana">Vida sana</label>
+                </li>   
+            </ul>
+            <div id="u-photo">
+                <h4 class="input-title">Foto del Usuario</h4>
+                <input type="image" id="imagen-usuario" alt="Subir foto">
+            </div> 
+            <div id="pass-box">
+                <label for="pass"></label>
+                <input type="password" id="pass" placeholder="Escriba su contraseña">
+                <label for="pass2"></label>
+                <input type="password" id="pass2" placeholder="Confirme su contraseña" >
+            </div>
+            <div id="register-buttom">
+                <input type="submit" id="submit" value="Enviar" > 
+                <input type="reset"  id="clean" value="Borrar">
+            </div>
+        </form>
+    </main>
 
-            <label for="interes1">Electro</label>
-            <input type="checkbox" id="interes1">
-            <label for="interes2">Moda</label>
-            <input type="checkbox" id="interes2">
-            <label for="interes3">Hogar</label>
-            <input type="checkbox" id="interes3">
-            <label for="interes4">Juguetería</label>
-            <input type="checkbox" id="interes4">
-            <label for="interes5">Vida sana</label>
-            <input type="checkbox" id="interes5">
-        </fieldset>  
 
-        <br>  
-        <label for="imagen-usuario">Foto del Usuario</label>
-        <input type="image" id="imagen-usuario" alt="img-user">
-        <br>
-        <br>
-
-        <fieldset id="contraseña">
-            <legend class="titulo-form">Crear una contraseña</legend>
-
-            <label for="pass1">Contraseña</label>
-            <input type="password" id="pass1">
-            <label for="pass2">Confirme la contraseña</label>
-            <input type="password" id="pass2">
-        </fieldset>
-        <br>
-        <input type="submit" value="Enviar"> 
-        <input type="reset" value="Borrar">
-
-    </form>
-
-    <hr>
     <footer>
-        <div>
-            <h4>Pagá con tarjeta o efectivo</h4>
-            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
-                efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+        <div class="footer-boxes">
+            <i class="fa-solid fa-credit-card"></i>
+            <h4 class="txt-title-footer">Pagá con tarjeta o efectivo</h4>
+            <p class="txt-footer">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
+            efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+        </div>
+
+        <div class="footer-boxes">
+            <i class="fa-solid fa-gift"></i>
+            <h4 class="txt-title-footer">Envío gratis desde $2500</h4>
+            <p class="txt-footer">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
+                miles de productos. Es un beneficio de Mercado Puntos.</p>
+        </div>
+
+        <div class="footer-boxes">
+            <i class="fa-solid fa-user-shield"></i>
+            <h4 class="txt-title-footer">Seguridad, de principio a fin</h4>
+            <p class="txt-footer">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no
+                puedas hacer, porque estás siempre protegid@</p>
         </div>
 
         <div>
-            <h4>Envío gratis desde $2500</h4>
-        <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
-            miles de productos. Es un beneficio de Mercado Puntos.</p>
-        </div>
-
-        <div>
-            <h4>Seguridad, de principio a fin</h4>
-        <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no
-            puedas hacer, porque estás siempre protegid@</p>
-        </div>
-
-        <div>
-            <h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
+            <h4 class="txt-copy">Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
         </div>
     </footer>
-
 </body>
 </html>
+
+
+
+
