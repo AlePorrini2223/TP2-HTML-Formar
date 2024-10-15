@@ -1,0 +1,104 @@
+    
+    /************* mobile *************/
+
+    @media (min-width: 320px) {
+
+        .home-section-article {
+            width: 100%;
+            padding: 10px 15px;
+        }
+
+        .button-delivery {
+            position: relative;
+            bottom: 20px;
+            left: 280px;
+            height: 35px;
+            width: 35px;
+            border: 1px solid var(--var-color-green);
+            border-radius: 50%;
+            background-color: transparent;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .img-products {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .description {
+            background-color: white;
+            padding: 0px 0px 20px 20px;
+        }
+
+        .txt-desc,
+        .fa-truck {
+            color: var(--var-color-green);
+        }
+
+        .txt-precios {
+            font-size: 18px;
+            width: 30%;
+        }
+
+        .txt-desc,
+        .txt-producto {
+            font-size: 16px;
+        }
+
+        .txt-desc {
+            padding-left: 20px;
+        }
+
+        .txt-producto {
+            color: var(--var-color-txt);
+            padding-top: 15px;
+        }
+
+        .txt-inline {
+            display: flex;
+        }
+    }
+
+
+
+    /************* tablets *************/
+    @media (min-width: 768px) {
+
+        .home-section-visitas,
+        .home-section-ofertas {
+            display: flex;
+            justify-content: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .home-section-ofertas {
+            padding-bottom: 40px;
+        }
+
+        .home-section-article {
+            width: 50%;
+        }
+
+        .img-products,
+        .description {
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        }
+    }
+
+
+    /************* desktop *************/
+    @media (min-width: 1024px) {
+
+        .home-section-article {
+            width: 25%;
+        }
+        
+        .button-delivery {
+            position: relative;
+            bottom: 20px;
+            left: 150px;
+        }
+
+        }

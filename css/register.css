@@ -1,0 +1,119 @@
+
+/************* mobile *************/
+
+@media (min-width: 320px) {
+
+
+    #register {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    #name,
+    #username,
+    #email,
+    #date,
+    #address {
+        height: 30px;
+        padding-left: 7px;
+        border-radius: 5px;
+        width: 93%;
+        margin: auto;
+    }
+
+    #name,
+    #username,
+    #date {
+        margin-bottom: 35px;
+    }
+
+    #email,
+    #address,
+    .profile-radio {
+        margin-bottom: 15px;
+    }
+
+    #date {
+        display: flex;
+    }
+
+    .input-title {
+        font-size: 14px;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    .profile-radio {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #checkboxes {
+        margin: 0px 15px;
+        height: 210px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+
+    #checkboxes,
+    .input-title {
+        padding-bottom: 15px;
+    }
+
+    .check-b label {
+        padding-left: 5px;
+    }
+
+    #u-photo {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding: 15px 0px;
+
+    }
+
+    #submit,
+    #clean,
+    #imagen-usuario {
+        background-color: var(--var-color-button);
+        border-radius: 5px;
+        color: white;
+        border-radius: 5px;
+        height: 30px;
+        width: 100px;
+    }
+
+    #imagen-usuario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #pass-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 120px;
+        padding-bottom: 20px;
+    }
+
+    #pass,
+    #pass2 {
+        height: 30px;
+        padding-left: 7px;
+        border-radius: 6px;
+        width: 80%;
+    }
+
+    #register-buttom {
+        display: flex;
+        justify-content: space-around;
+        padding: 30px 10px;
+    }
+
+}

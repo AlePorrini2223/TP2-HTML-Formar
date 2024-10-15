@@ -1,0 +1,130 @@
+/************* mobile *************/
+
+@media (min-width: 320px) {
+
+    header {
+        background-color: var(--var-color-header);
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hbox-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+    }
+
+    #logo-ml {
+        width: 50%;
+        padding-right: 10px;
+    }
+
+    .form-input-search {
+        display: flex;
+    }
+
+    #search-bar {
+        height: 35px;
+        width: 100%;
+        border-radius: 4px;
+        padding-left: 12px;
+    }
+
+    .search-buttom {
+        position: relative;
+        right: 20px;
+        height: 35px;
+        width: 35px;
+        background-color: white;
+        border-radius: 4px;
+    }
+
+    .h-text2 {
+        text-align: center;
+    }
+
+    #hbox-2,
+    .burger-menu {
+        margin-bottom: 30px;
+    }
+
+    .burger-menu {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    i.fa-bars {
+        background-color: var(--var-color-button);
+        color: white;
+        border-radius: 3px;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+    .h-text1 {
+        display: none;
+    }
+
+    .nav-1,
+    .nav-2 {
+        display: none;
+    }
+
+}
+
+
+/************* tablets *************/
+@media (min-width: 768px) {
+
+    .burger-menu {
+        display: none;
+    }
+
+    #hbox-1 {
+        display: flex;
+
+    }
+
+    #logo-ml {
+        width: 35vw;
+    }
+
+    .form-input-search {
+        display: flex;
+        width: 30%;
+    }
+
+    .h-text2 {
+        display: none;
+    }
+
+    .h-nav a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .h-nav {
+        padding: 20px 10px 0px 10px;
+    }
+
+    .nav-1,
+    .nav-2 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #hbox-1,
+    #hbox-2 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #hbox-2 {
+        margin: 20px;
+    }
+
+}

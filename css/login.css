@@ -1,0 +1,34 @@
+/************* mobile *************/
+
+@media (min-width: 320px) {
+
+    #login {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 50px;
+    }
+
+    #name-login,
+    #password {
+        height: 30px;
+        margin-bottom: 45px;
+        padding-left: 7px;
+    }
+
+    #login-submit {
+        background-color: var(--var-color-button);
+        color: white;
+        border-radius: 5px;
+        height: 30px;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    #login-submit {
+        width: 50%;
+        margin: auto;
+    }
+
+}

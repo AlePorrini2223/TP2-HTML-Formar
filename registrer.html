@@ -4,50 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/assets/logo-mercado-liebre.svg" type="image/x-icon">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <script src="https://kit.fontawesome.com/a8adffa4f1.js" crossorigin="anonymous"></script>
     <title>Mercado Liebre</title>
 </head>
 
 <body>
     <header>
-        <div id="hbox-1">
-            <img src="./assets/logo-mercado-liebre.svg" id="logo-ml" alt="logo-mercado-liebre">
-            <form action="#" method="get">
-                <input type="search" id="search-bar" placeholder="Buscar productos, marcas" size="30">
-                <button class="search-buttom1" type="submit">
-                    <i class="fa fa-search"></i>
-                </button>
-            </form>
-            <button class="search-buttom2">
-                <img src="assets/magnifying-glass-solid.svg" class="glass-icon" alt="search-icon">
-            </button>
-            <p class="h-text"><i class="fa-solid fa-hand-holding-dollar"></i>
-            Comprá en cuotas y sin tarjeta de crédito</p>
-        </div>      
-        <div id="hbox-2">
-            <nav>
-                <ul class="nav-1">
-                    <li class="h-nav"><a href="#">Ofertas</a></li>
-                    <li class="h-nav"><a href="#">Tiendas Oficiales</a></li>
-                    <li class="h-nav"><a href="#">Vender</a></li>
-                    <li class="h-nav"><a href="#">Ayuda</a></li>
-                </ul>
-            </nav>
-            <nav>   
-                <ul class="nav-2">  
-                    <li class="h-nav"><a href="#">Creá tu cuenta</a>
-                        <i class="fa-regular fa-id-card"></i></li>
-                    <li class="h-nav"><a href="/login.html">Ingresá</a>
-                        <i class="fa-solid fa-right-to-bracket"></i></li>
-                    <li class="h-nav"><a href="#">Mis compras</a>
-                        <i class="fa-solid fa-basket-shopping"></i></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="burger-menu">
-            <i class="fa-solid fa-bars"></i>
-        </div>
+            <div id="hbox-1">
+                <img src="/imgs/logo-mercado-liebre.svg" id="logo-ml" alt="logo-mercado-liebre">
+                <form action="#" method="get" class="form-input-search">
+                    <input type="search" id="search-bar" placeholder="Buscar productos, marcas" size="30">
+                    <button class="search-buttom" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+                <p class="h-text1"><i class="fa-solid fa-hand-holding-dollar"></i>
+                    Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+            <p class="h-text2"><i class="fa-solid fa-hand-holding-dollar"></i>
+                Comprá en cuotas y sin tarjeta de crédito</p>
+            <div id="hbox-2">
+                <nav>
+                    <ul class="nav-1">
+                        <li class="h-nav"><a href="#">Ofertas</a></li>
+                        <li class="h-nav"><a href="#">Tiendas Oficiales</a></li>
+                        <li class="h-nav"><a href="#">Vender</a></li>
+                        <li class="h-nav"><a href="#">Ayuda</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul class="nav-2">
+                        <li class="h-nav"><a href="/registrer.html">Creá tu cuenta</a>
+                            <i class="fa-regular fa-id-card"></i>
+                        </li>
+                        <li class="h-nav"><a href="/login.html">Ingresá</a>
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                        </li>
+                        <li class="h-nav"><a href="#">Mis compras</a>
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="burger-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
     </header>
 
     <main>
