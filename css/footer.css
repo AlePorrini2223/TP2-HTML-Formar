@@ -1,32 +1,61 @@
+/************* mobile *************/
 
-/***** FOOTER ******/
+@media (min-width: 320px) {
 
-.footer-boxes {
-    margin: 50px 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .footer-boxes {
+        margin: 50px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .fa-credit-card,
+    .fa-gift,
+    .fa-user-shield {
+        color: var(--var-color-button);
+        margin-bottom: 10px;
+        font-size: 2em;
+    }
+    
+    .txt-title-footer {
+        font-weight: bold;
+    }
+    
+    .txt-title-footer,
+    .txt-footer,
+    .txt-copy {
+        color: #666;
+        text-align: center;
+    }
+    
+    .txt-copy {
+        padding-bottom: 15px;
+    }
+
 }
 
-.fa-credit-card,
-.fa-gift,
-.fa-user-shield {
-    color: #1259c3;
-    margin-bottom: 10px;
-    font-size: 2em;
+
+/************* desktop *************/
+
+@media (min-width: 1024px) {
+
+    .footer-div-icons {
+        display: flex;
+    }
+
+    .footer-boxes {
+        margin: 20px;
+        padding: 40px;
+        transition: 1s;
+    }
+
+    .footer-boxes:hover {
+        background-color: #ffe979;
+        border: 1px dashed #666;
+    }
+
+    .footer-div-copyright {
+        padding: 10px 0px;
+    }
 }
 
-.txt-title-footer {
-    font-weight: bold;
-}
-
-.txt-title-footer,
-.txt-footer,
-.txt-copy {
-    color: #666;
-    text-align: center;
-}
-
-.txt-copy {
-    padding-bottom: 15px;
-}
