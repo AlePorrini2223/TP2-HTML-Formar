@@ -1,0 +1,156 @@
+
+/********** MOBILE*********/
+
+@media (min-width: 320px) {
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        gap: 50px;
+        background-color: rgb(22, 97, 72);
+    }
+
+    .mi-logo-footer {
+        width: 30vw;
+        height: auto;
+        border-radius: 50%;
+    }
+
+
+    /* formulario */
+
+    #footer-contact-form {
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+        gap: 8px;
+    }
+
+    #name,
+    #email,
+    #message {
+        border: 2px solid white;
+        height: 40px;
+        border-radius: 5px;
+        padding: 10px;
+        color: white;
+        font-size: 18px;
+        background-color: transparent;
+        transition: 1s;
+    }
+
+    #message {
+        height: 70px;
+        text-align: start;
+    }
+
+    #name:focus,
+    #email:focus,
+    #message:focus {
+        background-color: #212121;
+        color: white;
+        outline-color: rgb(0, 255, 255);
+        box-shadow: -3px -3px 15px rgb(0, 255, 255);
+        transition-property: box-shadow;
+    } 
+
+
+    #footer-form-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 10px;
+    }
+
+    #submit,
+    #clean {
+        background-color: #212121;
+        border-radius: 3px;
+        color: white;
+        height: 30px;
+        width: 100px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s, box-shadow 0.5s;
+    }
+    
+    #submit:active, #clean:active {
+        box-shadow: box-shadow 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+        transform: translateY(4px);
+    }
+
+    #submit:hover, #clean:hover {
+        background-color: rgb(158, 158, 158);
+        color:black;
+    }
+    
+
+
+    /* redes */
+
+    .footer-redes {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-redes-icons {
+        display: flex;
+        flex-direction: row;
+        padding-left: 120px;
+        gap: 20px;
+        align-items: center;
+        font-size: 25px;
+    }
+
+    .p-follow {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+
+
+    /* nav */
+
+    h4 {
+        padding-bottom: 8px;
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+
+    .footer-nav-li ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .footer-nav-li a {
+        color:black;
+        transition: color 0.3s;
+    }
+
+    .footer-nav-li a:hover {
+        color: white;
+    }
+
+    .footer-contact-div {
+        display: flex;
+        flex-direction: column;
+        padding-right: 100px;
+    }
+
+    .footer-redes-icons i,
+    .p-follow {
+        color: white;
+    }
+
+}

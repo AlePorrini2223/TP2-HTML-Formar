@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <title>Mi Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-box-1">
+            <button class="search-glass">
+                <i class="bi bi-search"></i>
+            </button>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+
+        <img src="/assets/Mi-Logo.png" href="#" id="mi-logo" alt="logo" />
+
+        <div class="mobile-menu disabled" id="mobile-menu">
+            <div class="header-mobile-menu">
+                <img src="/assets/Mi-Logo.png" id="mi-logo-mobile-menu" alt="logo" />
+                <button class="close-menu" id="close-menu">
+                    <i class="bi bi-x"></i>
+                </button>
+            </div>
+
+            <nav id="nav-mobile-menu">
+                <ul>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">MIS PROYECTOS</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </nav>
+
+            <div class="div-tablet-desktop">
+                <nav class="nav-tablet-desktop">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Mis proyectos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-hero">
+            <article class="hero-foto-personal">
+                <figure>
+                    <img src="/assets/mi foto personal.jpg" class="img-foto-personal" alt="mi-foto-personal" />
+                    <div class="capa-hero-intro">
+                        <h2>Luces, resiliencia, y ¡acción!</h2>
+                        <p>
+                            La vida nos da nuevas oportunidades que se ocultan detrás de
+                            situaciones díficiles y circustancias cambiantes. Y aunque no
+                            existe alguien que no enfrente adversidades, la diferencia está
+                            en cómo responder a ellas. Te invito a que conozcas de la
+                            RESILIENCIA. Con ella también se maneja el mundo IT.<br />
+                            Hola! Mi nombre es Alejandrina. Tengo 34 años y hago muchas
+                            cosas, pero hace 3 años descubrí un mundo nuevo. Hace 3 años que
+                            incursiono y me capcacito en el área IT. Soy QA Tesster Jr. y
+                            actualmente estudiante de Programación Full Stack.<br>¡Bienvenidos
+                            a mi portfolio!
+                        </p>
+                    </div>
+                </figure>
+            </article>
+        </section>
+
+        <section class="section-proyectos">
+            <h2>Mis Proyectos</h2>
+            <artilce class="article-proyectos-grid">
+                <div><h2>Proyecto 1</h2></div>
+                <div><h2>Proyecto 2</h2></div>
+                <div><h2>Proyecto 3</h2></div>
+                <div><h2>Proyecto 4</h2></div>
+            </artilce>
+            <button class="see-more">Ver más</button>
+        </section>
+    </main>
+
+    <footer>
+        <img src="/assets/Mi-Logo.png" class="mi-logo-footer" alt="logo" />
+
+        <form action="#" method="get" id="footer-contact-form">
+            <label for="name"></label>
+            <input type="text" id="name" placeholder="Nombre" required />
+            <label for="email"></label>
+            <input type="email" id="email" placeholder="Email" required />
+            <label for="menssage"></label>
+            <input type="text" id="message" placeholder="Escribime..." required />
+            <div id="footer-form-button">
+                <input type="submit" id="submit" value="Enviar" />
+                <input type="reset" id="clean" value="Borrar" />
+            </div>
+        </form>
+
+        <div class="footer-redes">
+            <p class="p-follow">Seguíme</p>
+            <ul class="footer-redes-icons">
+                <li>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-github"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-nav">
+            <div class="footer-contact-div">
+                <h4>Contactame</h4>
+                <p>alejandrina@gmail.com</p>
+                <p>+54 011-0303-456</p>
+            </div>
+
+            <nav class="footer-nav-li">
+                <h4>Navegá</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Mis proyectos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="p-copyright">
+            © 2024 Alejandrina Porrini Web. Todos los derechos reservados
+        </p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

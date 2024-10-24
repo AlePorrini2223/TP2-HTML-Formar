@@ -1,0 +1,107 @@
+
+/************* MOBILE *************/
+
+@media (min-width: 320px) {
+
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-image: url(/assets/space-bg.jpg);
+        background-size: cover;
+        padding: 30px;
+    }
+
+    .header-box-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #mi-logo {
+        width: 50vw;
+        height: auto;
+        border-radius: 50%;
+        margin: auto;
+        cursor: pointer;
+    }
+
+    .open-menu,
+    .search-glass,
+    .close-menu {
+        color: white;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .open-menu {
+        font-size: 30px;
+    }
+
+    .close-menu {
+        font-size: 40px;
+    }
+
+    .search-glass {
+        font-size: 25px;
+    }
+
+
+    /* collapse burger menu  */
+
+    #mi-logo-mobile-menu {
+        width: 30vw;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .bi-x {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+
+    .nav-tablet-desktop {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        background-image: url(/assets/space-bg.jpg);
+        background-size: cover;
+        position: fixed;
+        inset: 0;
+        padding: 30px;
+        z-index: 2;
+    }
+
+    .header-mobile-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #nav-mobile-menu {
+        display: flex;
+        flex-grow: 1;
+        padding-top: 60px;
+    }
+
+    #nav-mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #nav-mobile-menu ul li a {
+        color: white;
+        font-size: 20px;
+    }
+    
+    .disabled {
+        display: none;
+    }
+
+
+}
