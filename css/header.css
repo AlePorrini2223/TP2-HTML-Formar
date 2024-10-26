@@ -1,15 +1,14 @@
-
 /************* MOBILE *************/
 
 @media (min-width: 320px) {
 
     header {
-        width: 100%;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         background-image: url(/assets/space-bg.jpg);
         background-size: cover;
-        padding: 30px;
+        padding: 20px;
     }
 
     .header-box-1 {
@@ -19,11 +18,15 @@
     }
 
     #mi-logo {
-        width: 50vw;
+        width: 35vw;
         height: auto;
         border-radius: 50%;
         margin: auto;
         cursor: pointer;
+    }
+
+    .nav-desktop-menu {
+        display: none;
     }
 
     .open-menu,
@@ -62,10 +65,6 @@
         right: 20px;
     }
 
-    .nav-tablet-desktop {
-        display: none;
-    }
-
     .mobile-menu {
         display: flex;
         flex-direction: column;
@@ -95,13 +94,73 @@
     }
 
     #nav-mobile-menu ul li a {
-        color: white;
+        color: rgb(40, 184, 136);
         font-size: 20px;
+        transition: color 500ms;
     }
-    
+
+    #nav-mobile-menu ul li a:hover {
+        color: white;
+    }
+
+
     .disabled {
         display: none;
     }
 
+}
+
+/************* tablets *************/
+
+@media (min-width: 768px) {
+
+    header {
+        height: 30vh;
+    }
+
+    #mi-logo {
+        width: 23vw;
+    }
+}
+
+
+
+/************* desktop *************/
+
+@media (min-width: 1024px) {
+
+    header {
+        display: inline-block;
+        height: 18vw;
+    }
+
+    #mi-logo {
+        width: 15vw;
+        height: auto;
+    }
+
+    .open-menu,
+    .search-glass,
+    .mobile-menu {
+        display: none;
+    }
+
+    .nav-desktop-menu {
+        display: inline-flex;
+        float: right;
+    }
+
+    .nav-desktop-menu ul {
+        list-style-type: none;
+        text-transform: uppercase;
+        padding: 55px 10px;
+        display: flex;
+        gap: 100px;
+    }
+
+    .nav-desktop-menu ul li a {
+        color: white;
+        font-weight: 400;
+    }
 
 }

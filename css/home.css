@@ -1,9 +1,8 @@
-
 /************* MOBILE *************/
 
 @media (min-width: 320px) {
 
-        /* section hero */
+    /* section hero */
 
     .section-hero {
         display: flex;
@@ -11,10 +10,11 @@
         gap: 30px;
         padding-top: 20px;
     }
-    
-    .hero-foto-personal {    
-        width: 100%; 
+
+    .hero-foto-personal {
+        width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -31,12 +31,12 @@
     }
 
     .hero-foto-personal figure img {
-        height: 70vh;
+        height: 60vh;
         width: auto;
         transition: all 500ms ease-out;
     }
 
-    .hero-foto-personal figure:hover > img {
+    .hero-foto-personal figure:hover>img {
         transform: scale(1.2);
     }
 
@@ -53,50 +53,65 @@
         z-index: 2;
     }
 
-    .hero-foto-personal figure:hover > .capa-hero-intro {
-        opacity: 1;
-        visibility: visible;
+    .hero-foto-personal figure:hover>.capa-hero-intro h2 {
+        margin-top: 40px;
+        margin-bottom: 10px;
     }
 
-    .hero-foto-personal figure:hover > .capa-hero-intro h2 {
-        margin-top: 50px;
-        margin-bottom: 10px;
+    .hero-foto-personal figure:hover>.capa-hero-intro {
+        opacity: 1;
+        visibility: visible;
     }
 
     .hero-foto-personal figure .capa-hero-intro h2 {
         color: white;
         box-shadow: -3px -3px 15px white;
-        font-size: 28px;
+        font-size: 16px;
         font-weight: 400;
         margin-bottom: 120px;
         transition: all 500ms ease-out;
-        margin-top: 30px;
+        margin-top: 20px;
         padding: 8px;
     }
 
     .hero-foto-personal figure .capa-hero-intro p {
         color: white;
         font-weight: 300;
-        font-size: 20px;
-        padding-top: 5px;
+        font-size: 16px;
+        padding-top: 20px;
         line-height: 1.5;
         width: 100%;
-        max-width: 330px;
+        max-width: 260px;
         margin: auto;
     }
-    
 
-        /* section proyectos */
+    .hero-foto-personal>p {
+        padding-top: 20px;
+        margin: 20px 0px;
+        text-align: center;
+    }
+
+    @media (min-width: 500px) {
+
+        .hero-foto-personal figure .capa-hero-intro p {
+            font-size: 16px;
+            padding-top: 40px;
+            max-width: 260px;
+        }
+    }
+
+
+    /* section proyectos */
 
     .section-proyectos {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 40px;
+        padding-top: 10px;
         gap: 20px;
     }
 
-    .section-proyectos > h2 {
+    .section-proyectos>h2 {
         text-align: center;
         padding-top: 30px;
     }
@@ -104,18 +119,19 @@
     .article-proyectos-grid {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
         width: 100%;
     }
 
-    .article-proyectos-grid > div > h2 {
+    .article-proyectos-grid>div>h2 {
         color: white;
         font-size: 20px;
         padding: 10px;
         font-weight: 300;
+        background-color: rgb(22, 97, 72, 0.5);
     }
 
-    .article-proyectos-grid > div {
+    .article-proyectos-grid>div {
         background-size: cover;
         height: 140px;
         display: flex;
@@ -123,25 +139,36 @@
         transition: height 2s;
     }
 
-    .article-proyectos-grid > div:hover {
-        height: 400px;
+    @media (max-width: 767px) {
+
+        .article-proyectos-grid>div:hover {
+            height: 300px;
+        }
     }
 
-    .article-proyectos-grid > div:nth-last-child(1) {
+    .article-proyectos-grid>div:nth-last-child(1) {
         background-image: url(/assets/proyecto\ 4.jpg);
     }
-    .article-proyectos-grid > div:nth-last-child(2) {
+
+    .article-proyectos-grid>div:nth-last-child(2) {
         background-image: url(/assets/proyecto\ 3.jpg);
     }
-    .article-proyectos-grid > div:nth-last-child(3) {
+
+    .article-proyectos-grid>div:nth-last-child(3) {
         background-image: url(/assets/proyecto\ 2.png);
-    }     
-    .article-proyectos-grid > div:nth-last-child(4) {
+    }
+
+    .article-proyectos-grid>div:nth-last-child(4) {
         background-image: url(/assets/proyecto1.jpg);
     }
 
+    .article-proyectos-grid>div:nth-last-child(5) {
+        background-image: url(/assets/proyecto\ 5.jpg);
+    }
 
-
+    .article-proyectos-grid>div:nth-last-child(6) {
+        background-image: url(/assets/proyecto\ 6.jpg);
+    }
 
     .see-more {
         border: 1px solid black;
@@ -150,8 +177,8 @@
         padding: 10px 20px;
         text-transform: uppercase;
         background-color: transparent;
-        cursor: pointer;    
-        transition: background-color 0.3s, color 0.3s;    
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
     }
 
     .see-more:hover {
@@ -163,44 +190,135 @@
 
 
 
+/************* TABLETS *************/
+
+@media (min-width: 768px) {
+
+    main {
+        background-color: rgb(48, 48, 48);
+    }
+
+    /* section hero */
+
+    .hero-foto-personal>p {
+        color: white;
+        text-align: center;
+        border: 1px dotted white;
+        margin-top: 40px;
+        padding: 10px 15px;
+    }
+
+    @media (min-width: 821px) {
+
+        .section-hero {
+            padding: 40px;
+        }
+
+        .hero-foto-personal {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .hero-foto-personal figure img {
+            height: auto;
+            width: 40vw;
+            transition: all 2s ease-out;
+        }
+
+        .hero-foto-personal figure .capa-hero-intro p {
+            max-width: 230px;
+        }
+    }
+
+    /* section proyectos */
+
+    .section-proyectos {
+        padding: 5px 20px;
+    }
+
+    .section-proyectos h2 {
+        color: white;
+    }
+
+    .article-proyectos-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .article-proyectos-grid>div {
+        background-size: cover;
+        height: 200px;
+        cursor: pointer;
+        transition: all 1s;
+    }
+
+    .article-proyectos-grid>div:hover {
+        transform: scale(1.1);
+    }
+
+}
 
 
 
+/************* DESKTOP *************/
 
+@media (min-width: 1024px) {
 
+    /* section hero */
 
+    .section-hero {
+        display: flex;
+        justify-content: row;
+    }
 
+    .hero-foto-personal figure img {
+        height: auto;
+        width: 30vw;
+        transition: all 5s ease-out;
+    }
 
+    /* section proyectos */
 
+    .article-proyectos-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        align-content: center;
+        padding-bottom: 20px;
+    }
 
+    .article-proyectos-grid>div {
+        height: 200px;
+        width: 300px;
+    }
 
+    .see-more {
+        border: 1px solid white;
+        color: white;
 
+    }
 
+    @media (min-width: 1100px) {
 
+        .hero-foto-personal figure img {
+            height: auto;
+            width: 25vw;
+            transition: all 5s ease-out;
+        }
 
+        .hero-foto-personal figure .capa-hero-intro p {
+            max-width: 240px;
+            padding-top: 10px;
+        }
 
+        /* section proyectos */
 
+        .article-proyectos-grid>div {
+            height: 200px;
+            width: 100%;
+        }
 
+    }
 
-
-
-
-
-
-
-/************* tablets *************/
-
-@media (min-width: 768px) {}
-
-
-
-
-
-
-
-
-
-
-/************* desktop *************/
-
-@media (min-width: 1024px) {}
+}
